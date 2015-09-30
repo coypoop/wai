@@ -76,6 +76,7 @@ Library
                      Network.Wai.Handler.Warp.Header
                      Network.Wai.Handler.Warp.IO
                      Network.Wai.Handler.Warp.IORef
+                     Network.Wai.Handler.Warp.MultiMap
                      Network.Wai.Handler.Warp.ReadInt
                      Network.Wai.Handler.Warp.Recv
                      Network.Wai.Handler.Warp.Request
@@ -95,7 +96,6 @@ Library
       Cpp-Options:   -DWARP_DEBUG
   if (os(linux) || os(freebsd) || os(darwin)) && flag(allow-sendfilefd)
       Cpp-Options:   -DSENDFILEFD
-      Other-modules: Network.Wai.Handler.Warp.MultiMap
   if os(windows)
       Cpp-Options:   -DWINDOWS
       Build-Depends: time
